@@ -152,7 +152,7 @@ mi-portafolio/
 - **Legibilidad.** Archivos cortos son más fáciles de leer, comentar y evaluar que un solo archivo largo.
 
 ### Relación con el modelo cliente-servidor
-Todo el sitio es estático. El navegador (cliente) pide los archivos a GitHub Pages (servidor), recibe HTML, CSS y JS, y los ejecuta localmente. No hay lógica de servidor todavía: el formulario simula el envío. En la Unidad 2 se podrá reemplazar esa simulación por una llamada a un backend.
+Todo el sitio es estático. El navegador (cliente) pide los archivos a GitHub Pages (servidor), recibe HTML, CSS y JS, y los ejecuta localmente. No hay lógica de servidor: el formulario simula el envío.
 
 ## Entregable 2.2 – Guía de estilos
 
