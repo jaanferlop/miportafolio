@@ -182,6 +182,22 @@ El tema oscuro redefine estas mismas variables bajo `[data-theme="dark"]`, sin d
 | Etiqueta | `.skills li`, `.tecnologias span` | Cápsula con fondo claro y borde sutil. |
 | Campo de formulario | `.field` | Etiqueta, input y mensaje de error. Borde rojo si es inválido y verde si es válido. |
 
+## Entregable 4.3 – Autoevaluación y reflexión
+
+**1. ¿Qué fue lo más difícil de implementar y por qué?**
+Lo más difícil fue publicar el proyecto en GitHub, en especial la autenticación con el token. Mi primer `push` falló con el error "Repository not found" y al principio pensé que el problema era el token o la configuración de GitHub. En realidad, había escrito mal mi propio usuario en la dirección del repositorio, y no lo noté porque no leí con atención lo que estaba escribiendo. Además, al intentar crear el repositorio, el sistema me avisó de que ya existía uno con ese nombre.
+
+Esto me dejó una enseñanza importante: antes de buscar causas complicadas, debo analizar con calma lo que escribo y leer el mensaje de error que me muestra la máquina, porque casi siempre indica la causa. Ya usaba Git en proyectos laborales con GitLab, así que el flujo básico lo conocía. La dificultad fue adaptarme a GitHub: su autenticación con token y la activación de GitHub Pages. No lo considero una excusa, sino un aprendizaje sobre cambiar de plataforma y revisar los detalles.
+
+**2. ¿Cómo se relaciona la arquitectura de su proyecto con los conceptos de programación estructurada vistos en clase?**
+La arquitectura aplica los principios de la programación estructurada: descomposición en módulos, funciones con una sola tarea y control de flujo claro. Por ejemplo, `validarCampo()` recibe un campo y devuelve si es válido, `renderizarProyectos()` solo construye las tarjetas, y `main.js` las invoca en orden dentro de `DOMContentLoaded`. Las reglas de validación se guardan en un objeto, y los datos de proyectos en un arreglo, lo que separa los datos de la lógica. Usé condicionales y ciclos (`forEach`, `map`) en lugar de repetir código.
+
+**3. ¿Qué mejoraría si tuviera más tiempo?**
+- Conectar el formulario a un servicio real de correo o a un backend.
+- Mejorar la accesibilidad con pruebas de lector de pantalla y revisión de contraste.
+- Agregar pruebas automáticas y optimizar las imágenes.
+- Enriquecer la interfaz con más dinamismo y animaciones.
+
 ## Historial de commits
 Ver el historial completo con `git log --oneline` o en la pestaña *Commits* del repositorio.
 
